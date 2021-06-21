@@ -1,0 +1,62 @@
+<html>
+<head>
+       <title>Profile</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+       </head>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("base2.html");
+});
+</script>
+<!--end of Navigation bar-->
+<body>
+       <div class="jumbotron text-center">
+ <h1> Select Your Preferences </h1>
+</div>
+<div class="container">
+       <center>
+ <form action="userPref.php" method="post">
+ <br>
+ <form action="/userPref.php">
+       <label for="settingType">Choose a Setting:</label>
+       <select name="settingType" id="setting" required>
+              <option value="indoor">Indoor</option>
+              <option value="outdoor">Outdoor</option>
+       </select>
+       <br>
+       <label for="activityType">Choose a Activity:</label>
+       <select name="activityType" id="activity" required>
+              <option value="food">Food</option>
+              <option value="exercise">Exercise</option>
+              <option value="hike">Hiking</option>
+              <option value="stars">Stargazing</option>
+              <option value="walk">Walking</option>
+              <option value="other">Other</option>
+       </select>
+       <br>
+       <label for="priceType">Whats Your Price Range:</label>
+       <select name="priceType" id="price" required>
+              <option value="1">$1-$30</option>
+              <option value="2">$40-$80</option>
+              <option value="3">$80 and Above</option>
+       </select>
+       <br>
+       <input type="submit">
+     </form>
+ <br> 
+</center>
+</div>
+</body>
+</html>
+
